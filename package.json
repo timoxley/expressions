@@ -1,0 +1,27 @@
+{
+  "name": "expressions",
+  "version": "1.0.0",
+  "description": "Grab bag of template binding expressions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tim Oxley <secoif@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "inherits": "~2.0.1",
+    "moment": "~2.8.3",
+    "polymer-expressions": "~0.3.6",
+    "templatebinding": "~0.3.4",
+    "titlize": "~0.1.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timoxley/expressions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/timoxley/expressions/issues"
+  },
+  "homepage": "https://github.com/timoxley/expressions"
+}
