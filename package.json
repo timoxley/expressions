@@ -1,6 +1,6 @@
 {
   "name": "expressions",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Grab bag of template binding expressions.",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
     "inherits": "~2.0.1",
     "moment": "~2.8.3",
     "polymer-expressions": "~0.3.6",
+    "sliced": "0.0.5",
     "templatebinding": "~0.3.4",
     "titlize": "~0.1.1"
   },
