@@ -44,6 +44,12 @@ Expressions.prototype.log = function(data) {
   return data
 }
 
+Expressions.prototype.slice = function(data, start, end) {
+  if (!data || !data.slice) return data
+  var args = slice(arguments, 1)
+  return data.slice.apply(data, args)
+}
+
 Expressions.prototype.keys = function(data) {
   if (!data) return []
   return Object.keys(data)
