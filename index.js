@@ -2,6 +2,7 @@
 
 var inherits = require('inherits')
 var moment = require('moment')
+var slice = require('sliced')
 
 if (!hasTemplateBinding()) {
   require('templatebinding')
@@ -35,7 +36,11 @@ Expressions.prototype.json = function(input) {
 }
 
 Expressions.prototype.log = function(data) {
-  console.log(data)
+  var args = slice(arguments)
+  var tmp = args[0]
+  args[0] = args[1]
+  args[1] = tmp
+  console.log.apply(console, args)
   return data
 }
 
@@ -70,7 +75,6 @@ Expressions.prototype.fromNow = function(date, format) {
 }
 
 Expressions.prototype.calendar = function(date, format) {
-  console.log('calendar', moment(date).calendar())
   return moment(date).calendar()
 }
 
