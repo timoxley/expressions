@@ -3,6 +3,7 @@
 var inherits = require('inherits')
 var moment = require('moment')
 var slice = require('sliced')
+var titleize = require('titlize')
 
 if (!hasTemplateBinding()) {
   require('templatebinding')
@@ -29,7 +30,23 @@ function Expressions() {
 inherits(Expressions, ProtoExpressions)
 
 Expressions.prototype.titlize =
-Expressions.prototype.titleize = require('titlize')
+Expressions.prototype.titleize = function() {
+  if (str == null) return ''
+
+  str  = String(str)
+  str = str.replace(/_/g, ' ')
+  return titlize(str)
+}
+
+/**
+ * Convert to pretty-printed json output.
+ *
+ * Usage:
+ *
+ * ```js
+ * {{data | json}}
+ * ```
+ */
 
 Expressions.prototype.json = function(input) {
   return JSON.stringify(input, null, 2)
