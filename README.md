@@ -1,6 +1,8 @@
 # expressions
 
-Grab bag of template binding expressions.
+Grab bag of template-binding expressions.
+
+For use with new template-binding standards.
 
 ## API
 
@@ -20,7 +22,7 @@ Grab bag of template binding expressions.
   
   Usage:
   
-  ```js
+  ```html
   {{data | json}}
   ```
 
@@ -32,7 +34,7 @@ Grab bag of template binding expressions.
   
   Usage:
   
-  ```js
+  ```html
   {{data | log}}
   {{data | log('my data %s')}}
   {{data | log('my data %s, %d', otherdata)}}
@@ -44,7 +46,7 @@ Grab bag of template binding expressions.
   
   Usage:
   
-  ```js
+  ```html
   {{items | slice}}
   {{items | slice(2)}}
   {{items | slice(2, 5)}}
@@ -56,7 +58,7 @@ Grab bag of template binding expressions.
   
   Usage:
   
-  ```js
+  ```html
   <template repeat="{{key in items | keys}}">
    {{key}}
   </template>
@@ -68,7 +70,7 @@ Grab bag of template binding expressions.
   
   Usage:
   
-  ```js
+  ```html
   <template repeat="{{value in items | values}}">
    {{value}}
   </template>
@@ -80,7 +82,7 @@ Grab bag of template binding expressions.
   
   Usage:
   
-  ```js
+  ```html
   <template repeat="{{item in items | keyValue}}">
    {{item.key}} : {{item.value}}
   </template>
@@ -92,7 +94,7 @@ Grab bag of template binding expressions.
   
   Usage:
   
-  ```js
+  ```html
   {{item.date | date}}
   {{item.date | date('LLL')}}
   ```
@@ -103,7 +105,7 @@ Grab bag of template binding expressions.
   
   Usage:
   
-  ```js
+  ```html
   {{item.date | fromNow}} <!-- 2 weeks ago. -->
   ```
 
@@ -113,7 +115,7 @@ Grab bag of template binding expressions.
   
   Usage:
   
-  ```js
+  ```html
   {{item.date | fromNow}} <!-- 2 weeks ago. -->
   ```
 

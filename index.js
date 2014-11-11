@@ -34,7 +34,7 @@ inherits(Expressions, ProtoExpressions)
  * Also converts underscores to spaces.
  * Usage:
  *
- * ```js
+ * ```html
  * <!-- data = this_is_a_TITLE -->
  * {{data | titleize}} <!-- This is a Title -->
  * ```
@@ -54,7 +54,7 @@ Expressions.prototype.titleize = function() {
  *
  * Usage:
  *
- * ```js
+ * ```html
  * {{data | json}}
  * ```
  */
@@ -70,7 +70,7 @@ Expressions.prototype.json = function(input) {
  *
  * Usage:
  *
- * ```js
+ * ```html
  * {{data | log}}
  * {{data | log('my data %s')}}
  * {{data | log('my data %s, %d', otherdata)}}
@@ -91,7 +91,7 @@ Expressions.prototype.log = function(data) {
  *
  * Usage:
  *
- * ```js
+ * ```html
  * {{items | slice}}
  * {{items | slice(2)}}
  * {{items | slice(2, 5)}}
@@ -109,7 +109,7 @@ Expressions.prototype.slice = function(data, start, end) {
  *
  * Usage:
  *
- * ```js
+ * ```html
  * <template repeat="{{key in items | keys}}">
  *  {{key}}
  * </template>
@@ -126,7 +126,7 @@ Expressions.prototype.keys = function(data) {
  *
  * Usage:
  *
- * ```js
+ * ```html
  * <template repeat="{{value in items | values}}">
  *  {{value}}
  * </template>
@@ -145,7 +145,7 @@ Expressions.prototype.values = function(data) {
  *
  * Usage:
  *
- * ```js
+ * ```html
  * <template repeat="{{item in items | keyValue}}">
  *  {{item.key}} : {{item.value}}
  * </template>
@@ -167,7 +167,7 @@ Expressions.prototype.keyValue = function(data) {
  *
  * Usage:
  *
- * ```js
+ * ```html
  * {{item.date | date}}
  * {{item.date | date('LLL')}}
  * ```
@@ -181,7 +181,7 @@ Expressions.prototype.date = function(date, format) {
  *
  * Usage:
  *
- * ```js
+ * ```html
  * {{item.date | fromNow}} <!-- 2 weeks ago. -->
  * ```
  */
@@ -195,7 +195,7 @@ Expressions.prototype.fromNow = function(date) {
  *
  * Usage:
  *
- * ```js
+ * ```html
  * {{item.date | fromNow}} <!-- 2 weeks ago. -->
  * ```
  */
