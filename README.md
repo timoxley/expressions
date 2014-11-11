@@ -6,15 +6,15 @@ For use with new template-binding standards.
 
 ## API
 
-  - [json()](#expressionsjson)
-  - [log()](#expressionslog)
-  - [slice()](#expressionsslice)
-  - [keys()](#expressionskeys)
-  - [values()](#expressionsvalues)
-  - [keyValue()](#expressionskeyvalue)
-  - [date()](#expressionsdate)
-  - [fromNow()](#expressionsfromnow)
-  - [calendar()](#expressionscalendar)
+  - [json](#json)
+  - [log](#log)
+  - [slice](#slice)
+  - [keys](#keys)
+  - [values](#values)
+  - [keyValue](#keyvalue)
+  - [date](#date)
+  - [fromNow](#fromnow)
+  - [calendar](#calendar)
 
 ### json
 
