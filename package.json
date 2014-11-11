@@ -4,7 +4,7 @@
   "description": "Grab bag of template binding expressions.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docs": "make docs"
   },
   "author": "Tim Oxley <secoif@gmail.com>",
   "license": "ISC",
@@ -16,7 +16,9 @@
     "templatebinding": "~0.3.4",
     "titlize": "~0.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "dox": "~0.5.3"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/timoxley/expressions.git"
