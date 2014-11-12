@@ -1,6 +1,6 @@
 {
   "name": "expressions",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Grab bag of template binding expressions.",
   "main": "index.js",
   "scripts": {
