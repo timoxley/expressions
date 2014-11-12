@@ -119,6 +119,10 @@ For use with new template-binding standards.
   {{item.date | fromNow}} <!-- 2 weeks ago. -->
   ```
 
+## TODO
+
+Examples and tests.
+
 ## License
 
 MIT
