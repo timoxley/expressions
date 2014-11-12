@@ -3,7 +3,7 @@
 var inherits = require('inherits')
 var moment = require('moment')
 var slice = require('sliced')
-var titleize = require('titlize')
+var titlize = require('titlize')
 
 if (!hasTemplateBinding()) {
   require('templatebinding')
