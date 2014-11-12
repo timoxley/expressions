@@ -41,7 +41,7 @@ inherits(Expressions, ProtoExpressions)
  */
 
 Expressions.prototype.titlize =
-Expressions.prototype.titleize = function() {
+Expressions.prototype.titleize = function(str) {
   if (str == null) return ''
 
   str  = String(str)
